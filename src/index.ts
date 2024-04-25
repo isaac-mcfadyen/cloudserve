@@ -1,17 +1,5 @@
 import mime from "mime";
 
-// /**
-//  * Decompresses a Uint8Array of gzip compressed data.
-//  * @param input The input data to decompress.
-//  * @returns A readable stream of the decompressed data.
-//  */
-// const decompressArray = (input: Uint8Array): ReadableStream<any> => {
-// 	const ds = new DecompressionStream("gzip");
-// 	const blob = new Blob([input]);
-// 	const decompressedStream = blob.stream().pipeThrough(ds);
-// 	return decompressedStream;
-// };
-
 /**
  * Maps a regular path to the correct index.html file.
  * @param url The URL to map.
