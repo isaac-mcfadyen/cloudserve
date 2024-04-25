@@ -52,7 +52,10 @@ export const lookupStaticAsset = (
 	let finalPath: string;
 	if (options.overridePath != null) {
 		finalPath = options.overridePath;
-	} else if (options.spaMode === "root-index") {
+	} else if (
+		options.spaMode === "root-index" &&
+		mime.getType(url.pathname) === null
+	) {
 		finalPath = "/index.html";
 	} else {
 		finalPath = mapRegularPath(url);
