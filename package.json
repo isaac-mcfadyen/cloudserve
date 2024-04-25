@@ -1,0 +1,23 @@
+{
+	"name": "cloudserve",
+	"type": "module",
+	"files": [
+		"dist/*",
+		"package.json"
+	],
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bin": "dist/cli.js",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"dev": "npm run build && node dist/cli.js"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.25",
+		"commander": "^12.0.0",
+		"ora": "^8.0.1",
+		"typescript": "^5.4.2",
+		"mime": "^4.0.1"
+	}
+}
