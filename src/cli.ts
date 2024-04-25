@@ -12,7 +12,7 @@ const brotliCompress = promisify(zlib.brotliCompress);
 
 const cli = program
 	.name("cloudserve")
-	.version("1.0.3")
+	.version("1.0.5")
 	.description(
 		"🌎 Bundle assets for use with a globally distributed Cloudflare Worker."
 	);
