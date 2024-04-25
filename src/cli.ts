@@ -11,8 +11,8 @@ import path from "node:path";
 const brotliCompress = promisify(zlib.brotliCompress);
 
 const cli = program
-	.name("sites-v2")
-	.version("0.0.1")
+	.name("cloudserve")
+	.version("1.0.1")
 	.description(
 		"🌎 Bundle assets for use with a globally distributed Cloudflare Worker."
 	);

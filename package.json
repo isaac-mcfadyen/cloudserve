@@ -1,7 +1,7 @@
 {
 	"name": "cloudserve",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"files": [
 		"dist/*",
 		"package.json"
@@ -12,13 +12,14 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "tsc",
-		"dev": "npm run build && node dist/cli.js"
+		"dev": "npm run build && node dist/cli.js",
+		"prepublish": "npm run build"
 	},
 	"devDependencies": {
 		"@types/node": "^20.11.25",
 		"commander": "^12.0.0",
+		"mime": "^4.0.1",
 		"ora": "^8.0.1",
-		"typescript": "^5.4.2",
-		"mime": "^4.0.1"
+		"typescript": "^5.4.2"
 	}
 }

@@ -30,7 +30,7 @@ With Wrangler (add to your existing `wrangler.toml` file):
 
 ```bash
 [build]
-command = "sites-v2 ./path/to/website ./manifest.ts"
+command = "cloudserve ./path/to/website ./manifest.ts"
 ```
 
 An example Worker that uses the created manifest and serves static files, falling back to 404 if not found:
